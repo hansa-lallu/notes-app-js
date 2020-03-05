@@ -6,6 +6,6 @@ describe("Note list view", () => {
   expect(noteListView.noteList).toBeInstanceOf(NoteList)
   })
   it('returns list of items in html tags', () => {
-    expect(noteListView.displayNoteView()).toBe('<ul><li><div>Favourite food: pesto</div><li></ul>')
+    expect(noteListView.displayNoteView()).toBe('<ul><li><div>Favourite food: pesto</div></li></ul>')
   })
 });

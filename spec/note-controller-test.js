@@ -1,6 +1,6 @@
 describe ("note controller", function() {
 
-  noteController = new NoteController(new NoteList);
+  // noteController = new NoteController(new NoteList);
 
   it ("can take a note list as a parameter", function() {
     expect(noteController.noteList).toBeInstanceOf(NoteList)
