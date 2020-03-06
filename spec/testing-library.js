@@ -32,12 +32,12 @@ const matchers = (exp) => ({
 
   toBeInstanceOf: (assertion) => {
     if (exp instanceof assertion) {
-      console.log('%c pass', 'color: purple')
+      console.log('%c pass', 'color: green')
       return true
     } else {
       console.log('%c fail', 'color: red')
       console.log(`%c got: ${exp}`, 'color: red')
-      console.log(`%c expected: ${assertion}`, 'color: cyan')
+      console.log(`%c expected: ${assertion}`, 'color: purple')
       return false
     };
   }

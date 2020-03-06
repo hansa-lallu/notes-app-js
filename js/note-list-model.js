@@ -10,9 +10,18 @@ NoteList.prototype = (function() {
   function createNote(note) {
     this.storedNotes.push(new Note(note))
   };
+ 
+  function findNote(id) {
+    for (var i=0; i<this.storedNotes.length; i++) {
+      if (this.storedNotes[i].id === id) {
+        return this.storedNotes[i] 
+      }
+    }
+  }
 
   return {
     displayList: displayList, 
-    createNote: createNote
+    createNote: createNote,
+    findNote: findNote
   };
 })();
