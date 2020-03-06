@@ -12,6 +12,8 @@ const matchers = (exp) => ({
       return true
     } else {
       console.log('%c fail', 'color: red')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected: ${assertion}`, 'color: cyan')
       return false
     };
   },
@@ -22,6 +24,8 @@ const matchers = (exp) => ({
       return true
     } else {
       console.log('%c fail', 'color: red')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected: ${assertion}`, 'color: green')
       return false
     };
   },
@@ -32,6 +36,8 @@ const matchers = (exp) => ({
       return true
     } else {
       console.log('%c fail', 'color: red')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected: ${assertion}`, 'color: green')
       return false
     };
   }
