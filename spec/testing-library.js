@@ -13,7 +13,7 @@ const matchers = (exp) => ({
     } else {
       console.log('%c fail', 'color: red')
       console.log(`%c got: ${exp}`, 'color: red')
-      console.log(`%c expected: ${assertion}`, 'color: cyan')
+      console.log(`%c expected: ${assertion}`, 'color: purple')
       return false
     };
   },
@@ -25,14 +25,14 @@ const matchers = (exp) => ({
     } else {
       console.log('%c fail', 'color: red')
       console.log(`%c got: ${exp}`, 'color: red')
-      console.log(`%c expected: ${assertion}`, 'color: cyan')
+      console.log(`%c expected: ${assertion}`, 'color: purple')
       return false
     };
   },
 
   toBeInstanceOf: (assertion) => {
     if (exp instanceof assertion) {
-      console.log('%c pass', 'color: green')
+      console.log('%c pass', 'color: purple')
       return true
     } else {
       console.log('%c fail', 'color: red')
